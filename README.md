@@ -97,6 +97,16 @@ contract DegenGamingToken is ERC20, Ownable, ERC20Burnable {
     }
 }
 ```
+Connecting MetaMask with Avalanche Fuji Network, 
+
+1. Open MetaMask and click on the network dropdown at the top.
+2. Select "Add Network" and fill in the following details:
+Network Name: Avalanche Fuji C-Chain
+New RPC URL: https://api.avax-test.network/ext/bc/C/rpc](https://api.avax-test.network/ext/bc/C/rpc
+ChainID: 43113
+Symbol: AVAX
+3. Save and switch to the new network.
+   
 To compile the code,
 
 1. Go to the 'Solidity Compiler' tab on the left.
@@ -110,6 +120,12 @@ Once compiled,
 4. Click deploy.
 
 After deploying, you can interact with the contract.
+
+Verifying Contract on Snowtrace
+
+1. Go to https://testnet.snowtrace.io/.
+2. Search for your contract address.
+3. Complete the verification.
 
 ## Authors
 
