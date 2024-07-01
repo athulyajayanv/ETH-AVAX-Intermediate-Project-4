@@ -103,9 +103,12 @@ Connecting MetaMask with Avalanche Fuji Network,
 2. Select "Add Network" and fill in the following details:
 Network Name: Avalanche Fuji C-Chain
 New RPC URL: https://api.avax-test.network/ext/bc/C/rpc](https://api.avax-test.network/ext/bc/C/rpc
+
 ChainID: 43113
+
 Symbol: AVAX
-3. Save and switch to the new network.
+
+4. Save and switch to the new network.
    
 To compile the code,
 
