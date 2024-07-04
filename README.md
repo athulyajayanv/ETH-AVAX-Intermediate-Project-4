@@ -6,34 +6,34 @@ This Solidity program defines a custom ERC20 token contract for Degen Gaming tha
 
 This Solidity contract extends the ERC20 standard to create a custom token named 'Degen' with symbol 'DGN' with additional features like minting, burning, transferring, and owner-only functions. It tracks various game-related actions taken by players using the token, demonstrating the use of OpenZeppelin's ERC20 implementation along with ownership and burning extensions.
 
-1. Constructor
+1. Constructor: 
 The constructor initializes the contract with the name "Degen" and symbol "DGN". It also sets the initial owner of the contract to the address provided as the initialOwner.
 
-2. mintTokens
+2. mintTokens: 
 The mintTokens function allows the contract owner to mint new tokens to a specified recipient. It records the action as a PLAY and emits the TokensEarned event.
 
-3. transferTokens
+3. transferTokens: 
 The transferTokens function allows players to transfer tokens to another address. It ensures that the recipient's address is valid and that the sender has sufficient tokens. It records the transfer action for both the sender and recipient, and emits the TokensTransferred event.
 
-4. burnTokens
+4. burnTokens: 
 The burnTokens function allows players to burn their own tokens. It checks that the amount to be burned is valid and within the balance of the sender. It records the burn action and emits the TokensBurned event.
 
-5. redeemTokens
+5. redeemTokens: 
 The redeemTokens function allows players to redeem their tokens by burning them. It ensures that the amount to be redeemed is valid and within the sender's balance. It records the redeem action and emits the TokensRedeemed event.
 
-6. checkBalance
+6. checkBalance: 
 The checkBalance function returns the token balance of a specified account.
 
-7. getPlayerActions
+7. getPlayerActions: 
 The getPlayerActions function returns the action history of a specified player.
 
-8. _recordAction
+8. _recordAction: 
 The _recordAction function is an internal function that records a specified action and amount for a given player. It adds the action to the playerActions mapping.
 
-9. enum Action
+9. enum Action: 
 The Action enum defines various actions that can be performed in the game, such as PLAY, WIN, LOSE, PURCHASE, REDEEM, TRANSFER, BURN, and RECEIVE.
 
-10. struct GameAction
+10. struct GameAction: 
 The GameAction struct stores the details of a game action, including the type of action and the amount involved.
 
 ## Getting Started
