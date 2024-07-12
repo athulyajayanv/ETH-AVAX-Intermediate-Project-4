@@ -127,7 +127,7 @@ contract DegenGamingToken is ERC20, Ownable, ERC20Burnable {
     }
 }
 ```
-## Connecting MetaMask with Avalanche Fuji Network, 
+## Connecting MetaMask with Avalanche Fuji Network 
 
 1. Open MetaMask and click on the network dropdown at the top.
 2. Select "Add Network" and fill in the following details:
